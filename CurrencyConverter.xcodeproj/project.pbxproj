@@ -18,6 +18,13 @@
 		9332CB66279B7032008BB71D /* CurrencyConverterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB65279B7032008BB71D /* CurrencyConverterUITestsLaunchTests.swift */; };
 		9332CB74279B8522008BB71D /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB73279B8522008BB71D /* Currencies.swift */; };
 		9332CB77279B8DCD008BB71D /* CurrenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB76279B8DCD008BB71D /* CurrenciesTests.swift */; };
+		9332CB86279B9E61008BB71D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB85279B9E61008BB71D /* TabBarController.swift */; };
+		9332CB89279B9E90008BB71D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB88279B9E90008BB71D /* ListViewController.swift */; };
+		9332CB8B279B9E9C008BB71D /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332CB8A279B9E9C008BB71D /* ListViewController.storyboard */; };
+		9332CB8E279BA199008BB71D /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB8D279BA199008BB71D /* ConvertViewController.swift */; };
+		9332CB90279BA1A3008BB71D /* ConvertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332CB8F279BA1A3008BB71D /* ConvertViewController.storyboard */; };
+		9332CB93279BA240008BB71D /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332CB92279BA240008BB71D /* SettingsViewController.storyboard */; };
+		9332CB95279BA25D008BB71D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB94279BA25D008BB71D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		9332CB65279B7032008BB71D /* CurrencyConverterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9332CB73279B8522008BB71D /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
 		9332CB76279B8DCD008BB71D /* CurrenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTests.swift; sourceTree = "<group>"; };
+		9332CB85279B9E61008BB71D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9332CB88279B9E90008BB71D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9332CB8A279B9E9C008BB71D /* ListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListViewController.storyboard; sourceTree = "<group>"; };
+		9332CB8D279BA199008BB71D /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
+		9332CB8F279BA1A3008BB71D /* ConvertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvertViewController.storyboard; sourceTree = "<group>"; };
+		9332CB92279BA240008BB71D /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		9332CB94279BA25D008BB71D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,7 @@
 		9332CB41279B702F008BB71D /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				9332CB83279B9E4E008BB71D /* View */,
 				9332CB72279B8511008BB71D /* Models */,
 				9332CB42279B702F008BB71D /* AppDelegate.swift */,
 				9332CB44279B702F008BB71D /* SceneDelegate.swift */,
@@ -147,6 +162,44 @@
 				9332CB76279B8DCD008BB71D /* CurrenciesTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9332CB83279B9E4E008BB71D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9332CB91279BA227008BB71D /* Options */,
+				9332CB8C279BA184008BB71D /* Convert */,
+				9332CB87279B9E73008BB71D /* List */,
+				9332CB85279B9E61008BB71D /* TabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9332CB87279B9E73008BB71D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				9332CB88279B9E90008BB71D /* ListViewController.swift */,
+				9332CB8A279B9E9C008BB71D /* ListViewController.storyboard */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		9332CB8C279BA184008BB71D /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				9332CB8D279BA199008BB71D /* ConvertViewController.swift */,
+				9332CB8F279BA1A3008BB71D /* ConvertViewController.storyboard */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		9332CB91279BA227008BB71D /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				9332CB92279BA240008BB71D /* SettingsViewController.storyboard */,
+				9332CB94279BA25D008BB71D /* SettingsViewController.swift */,
+			);
+			path = Options;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +309,9 @@
 				9332CB4F279B7032008BB71D /* LaunchScreen.storyboard in Resources */,
 				9332CB4C279B7032008BB71D /* Assets.xcassets in Resources */,
 				9332CB4A279B702F008BB71D /* Main.storyboard in Resources */,
+				9332CB8B279B9E9C008BB71D /* ListViewController.storyboard in Resources */,
+				9332CB93279BA240008BB71D /* SettingsViewController.storyboard in Resources */,
+				9332CB90279BA1A3008BB71D /* ConvertViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9332CB47279B702F008BB71D /* ViewController.swift in Sources */,
+				9332CB95279BA25D008BB71D /* SettingsViewController.swift in Sources */,
 				9332CB43279B702F008BB71D /* AppDelegate.swift in Sources */,
+				9332CB8E279BA199008BB71D /* ConvertViewController.swift in Sources */,
+				9332CB89279B9E90008BB71D /* ListViewController.swift in Sources */,
 				9332CB74279B8522008BB71D /* Currencies.swift in Sources */,
+				9332CB86279B9E61008BB71D /* TabBarController.swift in Sources */,
 				9332CB45279B702F008BB71D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
