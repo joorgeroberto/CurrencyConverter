@@ -25,6 +25,8 @@
 		9332CB90279BA1A3008BB71D /* ConvertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332CB8F279BA1A3008BB71D /* ConvertViewController.storyboard */; };
 		9332CB93279BA240008BB71D /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332CB92279BA240008BB71D /* SettingsViewController.storyboard */; };
 		9332CB95279BA25D008BB71D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332CB94279BA25D008BB71D /* SettingsViewController.swift */; };
+		936F9FA5279BAC0100B48501 /* DefaultCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F9FA4279BAC0100B48501 /* DefaultCurrencyTableViewCell.swift */; };
+		936F9FAE279BAF7500B48501 /* DefaultCurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936F9FAC279BAF7500B48501 /* DefaultCurrencyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		9332CB8F279BA1A3008BB71D /* ConvertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvertViewController.storyboard; sourceTree = "<group>"; };
 		9332CB92279BA240008BB71D /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		9332CB94279BA25D008BB71D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		936F9FA4279BAC0100B48501 /* DefaultCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		936F9FAC279BAF7500B48501 /* DefaultCurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCurrencyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +171,8 @@
 		9332CB83279B9E4E008BB71D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9332CB91279BA227008BB71D /* Options */,
-				9332CB8C279BA184008BB71D /* Convert */,
-				9332CB87279B9E73008BB71D /* List */,
+				936F9FA3279BABAD00B48501 /* Cells */,
+				936F9FA2279BAB9100B48501 /* Screens */,
 				9332CB85279B9E61008BB71D /* TabBarController.swift */,
 			);
 			path = View;
@@ -200,6 +203,33 @@
 				9332CB94279BA25D008BB71D /* SettingsViewController.swift */,
 			);
 			path = Options;
+			sourceTree = "<group>";
+		};
+		936F9FA2279BAB9100B48501 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9332CB8C279BA184008BB71D /* Convert */,
+				9332CB87279B9E73008BB71D /* List */,
+				9332CB91279BA227008BB71D /* Options */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		936F9FA3279BABAD00B48501 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				936F9FA6279BADD300B48501 /* DefaultCurrencyTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		936F9FA6279BADD300B48501 /* DefaultCurrencyTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				936F9FA4279BAC0100B48501 /* DefaultCurrencyTableViewCell.swift */,
+				936F9FAC279BAF7500B48501 /* DefaultCurrencyTableViewCell.xib */,
+			);
+			path = DefaultCurrencyTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +338,7 @@
 			files = (
 				9332CB4F279B7032008BB71D /* LaunchScreen.storyboard in Resources */,
 				9332CB4C279B7032008BB71D /* Assets.xcassets in Resources */,
+				936F9FAE279BAF7500B48501 /* DefaultCurrencyTableViewCell.xib in Resources */,
 				9332CB4A279B702F008BB71D /* Main.storyboard in Resources */,
 				9332CB8B279B9E9C008BB71D /* ListViewController.storyboard in Resources */,
 				9332CB93279BA240008BB71D /* SettingsViewController.storyboard in Resources */,
@@ -342,6 +373,7 @@
 				9332CB8E279BA199008BB71D /* ConvertViewController.swift in Sources */,
 				9332CB89279B9E90008BB71D /* ListViewController.swift in Sources */,
 				9332CB74279B8522008BB71D /* Currencies.swift in Sources */,
+				936F9FA5279BAC0100B48501 /* DefaultCurrencyTableViewCell.swift in Sources */,
 				9332CB86279B9E61008BB71D /* TabBarController.swift in Sources */,
 				9332CB45279B702F008BB71D /* SceneDelegate.swift in Sources */,
 			);
